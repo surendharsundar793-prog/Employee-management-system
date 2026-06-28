@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: 'http://localhost:8080/search'
+  baseURL: 'http://localhost:8085/search'
 });
 
 export const getEmployees = () => api.get('/alldata').then(res => res.data);

@@ -20,7 +20,7 @@ import com.qsp.employee_management_system.entity.Employee;
 import com.qsp.employee_management_system.responsestructure.ResponseStructure;
 import com.qsp.employee_management_system.service.EmployeeService;
 
-@CrossOrigin(origins = "http://localhost:5173/")
+@CrossOrigin(origins = {"http://localhost:5173", "http://localhost:80", "http://localhost"})
 @RequestMapping("search")
 @RestController
 public class EmployeeController {

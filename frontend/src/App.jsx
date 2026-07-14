@@ -44,7 +44,7 @@ function App() {
       setEmployees(Array.isArray(data) ? data : []);
     } catch (err) {
       console.error(err);
-      setError("Unable to connect to the backend server. Please verify that the API server is running on http://localhost:8080.");
+      setError(`Unable to connect to the backend server. Please verify that the API server is running on http://${window.location.hostname}:8085.`);
       showToast("Backend connection failed", "error");
     } finally {
       setLoading(false);

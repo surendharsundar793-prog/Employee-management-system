@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: 'http://localhost:8080/search'
+  baseURL: import.meta.env.VITE_API_BASE_URL || `http://${window.location.hostname}:8085/search`
 });
 
 export const getEmployees = () => api.get('/alldata').then(res => res.data);
